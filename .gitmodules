@@ -1,0 +1,3 @@
+[submodule "api/Submodules/Dynamics_365_Core"]
+	path = api/Submodules/Dynamics_365_Core
+	url = https://atDevOps@dev.azure.com/atDevOps/Dynamics%20365%20Core/_git/Dynamics%20365%20Core

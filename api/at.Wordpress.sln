@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "at.Wordpress.WebApi", "at.Wordpress.WebApi\at.Wordpress.WebApi.csproj", "{900976D5-2E92-4990-8101-27BBE44701D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "at.Wordpress.Dataverse", "at.Wordpress.Dataverse\at.Wordpress.Dataverse.csproj", "{02CBD80F-674C-459A-9DD7-AC515F890920}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "at.D365.Core.DataAccess.Base", "Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccess.Base\at.D365.Core.DataAccess.Base.shproj", "{7770E19C-59D5-4AE6-8852-8955E6C8DB64}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "at.D365.Core.DataAccess.Contracts", "Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccsess.Contracts\at.D365.Core.DataAccess.Contracts.shproj", "{A0E838DA-D7A3-4066-800E-4DF5F0DEB336}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "at.D365.Core.Plugin.Base", "Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.Plugin.Base\at.D365.Core.Plugin.Base.shproj", "{2B795E3A-F339-45FD-A3D5-2E9406DC8C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{900976D5-2E92-4990-8101-27BBE44701D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900976D5-2E92-4990-8101-27BBE44701D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900976D5-2E92-4990-8101-27BBE44701D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900976D5-2E92-4990-8101-27BBE44701D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CBD80F-674C-459A-9DD7-AC515F890920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CBD80F-674C-459A-9DD7-AC515F890920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CBD80F-674C-459A-9DD7-AC515F890920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CBD80F-674C-459A-9DD7-AC515F890920}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED51149A-DE01-469C-BF5C-DE65E493C293}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccess.Base\at.D365.Core.DataAccess.Base.projitems*{02cbd80f-674c-459a-9dd7-ac515f890920}*SharedItemsImports = 5
+		Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccsess.Contracts\at.D365.Core.DataAccsess.Contracts.projitems*{02cbd80f-674c-459a-9dd7-ac515f890920}*SharedItemsImports = 5
+		Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.Plugin.Base\at.D365.Core.Plugin.Base.projitems*{2b795e3a-f339-45fd-a3d5-2e9406dc8c31}*SharedItemsImports = 13
+		Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccess.Base\at.D365.Core.DataAccess.Base.projitems*{7770e19c-59d5-4ae6-8852-8955e6c8db64}*SharedItemsImports = 13
+		Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccsess.Contracts\at.D365.Core.DataAccsess.Contracts.projitems*{a0e838da-d7a3-4066-800e-4df5f0deb336}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

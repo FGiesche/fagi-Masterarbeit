@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerPlatform.Dataverse.Client" Version="1.1.22" />
+  </ItemGroup>
+
+  <Import Project="..\Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccess.Base\at.D365.Core.DataAccess.Base.projitems" Label="Shared" />
+
+  <Import Project="..\Submodules\Dynamics_365_Core\at.D365.Core\at.D365.Core.DataAccsess.Contracts\at.D365.Core.DataAccsess.Contracts.projitems" Label="Shared" />
+
+</Project>
