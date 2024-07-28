@@ -5,6 +5,7 @@ import { LayoutService } from './shared/services/layout.service';
 import { UserService } from './shared/services/user.service';
 import notify from "devextreme/ui/notify";
 import { PublicComponent } from "./components/public/public.component";
+import { MsalService } from '@azure/msal-angular';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit {
   public loadingMessage: string = "Loading...";
   public isLoggedIn: boolean = false;
 
-  constructor(private router: Router, private layoutService: LayoutService, private elementRef: ElementRef, private userService: UserService) {
+  constructor(private router: Router, private layoutService: LayoutService, private elementRef: ElementRef, private userService: UserService, private authService: MsalService) {
     let initRoute = this.elementRef.nativeElement.getAttribute("initRoute");
     if(initRoute != undefined && initRoute != ""){
       this.router.navigate([initRoute], {skipLocationChange: true});
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit {
             notification.displayTime
           )
     );
+    authService.initialize().subscribe(() => { authService.handleRedirectObservable() });
   }
 
   public ngOnInit(): void {
