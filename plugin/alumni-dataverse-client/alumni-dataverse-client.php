@@ -9,8 +9,8 @@
  */                                                                                                                                                                                                                
                                                                                                                                                                                                                    
 function load_ng_scripts() {                                                      
-    wp_enqueue_style( 'ng_styles', plugin_dir_url( __FILE__ ) . 'dist/alumni-dataverse-client/styles-5INURTSO.css', array( 'benevolence-style', 'benevolence-vendors' ) );                                                                                                   
-    wp_register_script( 'ng_main', plugin_dir_url( __FILE__ ) . 'dist/alumni-dataverse-client/main-LS7I6SPZ.js', true );                                                                                                
+    wp_enqueue_style( 'ng_styles', plugin_dir_url( __FILE__ ) . 'dist/alumni-dataverse-client/styles-DIB2NWQ6.css', array( 'benevolence-style', 'benevolence-vendors' ) );                                                                                                   
+    wp_register_script( 'ng_main', plugin_dir_url( __FILE__ ) . 'dist/alumni-dataverse-client/main-ZACM5IKO.js', true );                                                                                                
     wp_register_script( 'ng_polyfills', plugin_dir_url( __FILE__ ) . 'dist/alumni-dataverse-client/polyfills-SCHOHYNV.js', true );                                                                                      
 }                                                                                                                                                                                                                  
                                                                                                                                                                                                                    
