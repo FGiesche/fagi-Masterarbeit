@@ -1,0 +1,25 @@
+<div class="at-event-registration">
+    @if(this.eventRegistration){
+        <div class="registeredOn">Angemeldet am: {{eventRegistration.createdon | date : 'short' }}</div>
+        <dx-button
+            stylingMode="contained"
+            text="Abmelden"
+            icon="close"
+            type="danger"
+            width="100%"
+            (onClick)="onClickSignOff($event)"
+        >
+        </dx-button>
+    }
+    @else {
+        <dx-button
+            stylingMode="contained"
+            text="Anmelden"
+            icon="check"
+            type="success"
+            width="100%"
+            (onClick)="onClickSignUp($event)"
+        >
+        </dx-button>
+    }
+</div> 

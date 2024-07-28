@@ -17,7 +17,7 @@ import { MsalService } from '@azure/msal-angular';
 })
 export class AppComponent implements OnInit {
   public showLoading: boolean = false;
-  public loadingMessage: string = "Loading...";
+  public loadingMessage: string = "";
   public isLoggedIn: boolean = false;
 
   constructor(private router: Router, private layoutService: LayoutService, private elementRef: ElementRef, private userService: UserService, private authService: MsalService) {

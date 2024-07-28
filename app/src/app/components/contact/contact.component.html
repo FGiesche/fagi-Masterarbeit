@@ -1,0 +1,43 @@
+<dx-form
+    [(formData)]="contact"
+    labelMode="floating"
+    [colCount]="2"
+>
+    <dxi-item itemType="group" caption="Persönliche Informationen">
+        <dxi-item dataField="firstname" [label]="{text: 'Vorname'}"></dxi-item>
+        <dxi-item dataField="lastname"  [label]="{text: 'Nachname'}" [isRequired]="true"></dxi-item>
+        <dxi-item dataField="birthdate" [label]="{text: 'Geburtstag'}" editorType="dxDateBox" [editorOptions]="{ 'dateSerializationFormat': 'yyyy-MM-dd', 'displayFormat': 'dd.MM.yyyy' }"></dxi-item>
+    </dxi-item>
+    <dxi-item itemType="group" caption="Kontaktdaten">
+        <dxi-item dataField="telephone1" [label]="{text: 'Telefon'}"></dxi-item>
+        <dxi-item dataField="mobilephone" [label]="{text: 'Mobil'}"></dxi-item>
+        <dxi-item dataField="emailaddress1" [label]="{text: 'E-Mail'}">        
+            <dxi-validation-rule type="email" message="Dies ist keine gültige E-Mail Adresse"></dxi-validation-rule>
+        </dxi-item>
+    </dxi-item>
+    <dxi-item itemType="group" caption="Anschrift">
+        <dxi-item dataField="address1_line1" [label]="{text: 'Straße/Hausnr.'}"></dxi-item>
+        <dxi-item dataField="address1_postalcode" [label]="{text: 'Postleitzahl'}"></dxi-item>
+        <dxi-item dataField="address1_city" [label]="{text: 'Stadt'}"></dxi-item>
+        <dxi-item dataField="address1_country" [label]="{text: 'Land'}"></dxi-item>
+    </dxi-item>
+</dx-form>  
+
+<dx-button
+    stylingMode="contained"
+    text="Speichern"
+    icon="save"
+    type="default"
+    width="100%"
+    (onClick)="onClickSaveContact($event)"
+    >
+</dx-button>
+<dx-button
+    stylingMode="contained"
+    text="Logout"
+    icon="user"
+    type="danger"
+    width="100%"
+    (onClick)="onClickLogout($event)"
+    >
+</dx-button>

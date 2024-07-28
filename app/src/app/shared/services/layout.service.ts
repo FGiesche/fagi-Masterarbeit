@@ -19,7 +19,7 @@ export class LayoutService {
   constructor(private logService: LogService) {
     //set default values
     this.change(LayoutParameter.ShowLoading, false);
-    this.change(LayoutParameter.LoadingMessage, "Loading...");
+    this.change(LayoutParameter.LoadingMessage, "Lädt...");
   }
 
   public change(valueToChange: LayoutParameter, value: any): void {
