@@ -25,7 +25,7 @@ const pluginFileContents = fs.readFileSync(`${pluginFilePath}`, 'utf8');
 
 const updateLine = (line, name) => {
     const matchedLinePart = line.match(/(?<=client\/).*?(?=\')/gs).toString();
-    const matchedFileName = scriptsAndStyleFiles.find(file => file.includes(name));
+    const matchedFileName = "browser/"+scriptsAndStyleFiles.find(file => file.includes(name));
     return line.replace(matchedLinePart, matchedFileName);
 }
 
@@ -33,7 +33,7 @@ const updatedFileContentArray = pluginFileContents.split(/\r?\n/).map(line => {
     switch (true) {
         case line.includes('wp_enqueue_style( \'ng_styles'):
             return updateLine(line, 'styles');
-        case line.includes('wp_register_script( \'ng_main'):
+        case line.includes('wp_register_script_module( \'ng_main'):
             return updateLine(line, 'main');
         case line.includes('wp_register_script( \'ng_polyfills'):
             return updateLine(line, 'polyfills');

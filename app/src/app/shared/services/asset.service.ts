@@ -5,7 +5,7 @@ import { environment } from "../../environments/environment";
 export class AssetService {
     public getAssetUrl(path: string): string{
         if(environment.production)
-            return `/wp-content/plugins/alumni-dataverse-client/dist/browser/alumni-dataverse-client/${path}`;
+            return `/wp-content/plugins/alumni-dataverse-client-1/dist/alumni-dataverse-client/browser/assets/${path}`;
         else
             return `assets/${path}`;
     }

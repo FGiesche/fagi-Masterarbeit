@@ -6,7 +6,7 @@ import { EventRegistrationComponent } from './components/event-registration/even
 export const routes: Routes = [  
   { 
     path: "", 
-    component: PublicComponent, 
+    component: ContactComponent, 
     pathMatch: "full", 
   },
   { 

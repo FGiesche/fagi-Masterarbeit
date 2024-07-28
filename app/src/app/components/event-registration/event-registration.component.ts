@@ -18,14 +18,14 @@ import { DatePipe } from "@angular/common";
   styleUrls: ["./event-registration.component.css"],
 })
 export class EventRegistrationComponent implements OnInit{
-  public eventId: string | null = "";
+  public eventId: string | null | undefined = "";
   public eventRegistration: at_EventRegistration | null = null;
   public event: at_Event | null = null;
   public isLoggedIn: boolean = false;
   public contact: Contact = {} as Contact;
 
   constructor(private activatedRoute: ActivatedRoute, private eventService: EventService, private layoutService: LayoutService, private eventRegistrationService: EventRegistrationService, private msalService: MsalService, private userService: UserService, private contactService: ContactService){
-    this.eventId = this.activatedRoute.snapshot.paramMap.get('id');
+    this.eventId = this.activatedRoute.snapshot.paramMap.get('id')?.toLowerCase();
     this.isLoggedIn = this.msalService.instance.getAllAccounts().length > 0
   }
 

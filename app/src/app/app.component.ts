@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
             notification.displayTime
           )
     );
-    authService.initialize().subscribe(() => { authService.handleRedirectObservable() });
+    authService.initialize().subscribe(() => { authService.handleRedirectObservable().subscribe(() => { this.isLoggedIn = this.userService.isLogggedIn }) });
   }
 
   public ngOnInit(): void {
