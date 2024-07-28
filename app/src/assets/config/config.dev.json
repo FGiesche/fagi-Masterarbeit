@@ -1,0 +1,21 @@
+{
+    "logging": {
+      "console": false
+    },
+    "azure": {
+      "applicationId": "",
+      "tenantId": "",
+      "b2c": {
+        "clientId": "b292b97e-8d39-4f8e-9872-8945203de898",
+        "signUpSignInFlow": "",
+        "signUpSignInAuthority": "https://fagimasterarbeitb2c.b2clogin.com/fagimasterarbeitb2c.onmicrosoft.com/b2c_1_fagi-masterarbeit-signupsignin",
+        "authorityDomain": "fagimasterarbeitb2c.b2clogin.com/fagimasterarbeitb2c.onmicrosoft.com"
+      }
+    },
+    "api": {
+      "url": "https://fagi-masterarbeit-api.azurewebsites.net/",
+      "scope": "https://fagimasterarbeitb2c.onmicrosoft.com/f47ffc3b-f0eb-485a-89ae-5e549e3aeb71/access_as_user"
+    },
+    "version": "0.0.2407.2813"
+  }
+  

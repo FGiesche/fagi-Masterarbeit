@@ -1,0 +1,23 @@
+@if(this.isLoggedIn)
+{
+    <dx-button
+        stylingMode="contained"
+        text="Logout"
+        icon="user"
+        type="danger"
+        width="100%"
+        (onClick)="onClickLogout($event)"
+        >
+    </dx-button>
+}
+@else{
+    <dx-button
+        stylingMode="contained"
+        text="Login"
+        icon="user"
+        type="success"
+        width="100%"
+        (onClick)="onClickLogin($event)"
+    >
+    </dx-button>
+}

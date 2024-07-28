@@ -1,0 +1,15 @@
+{
+  "entities": [
+    "at_event",
+    "at_eventregistration",
+    "contact"
+  ],
+  "actions": [],
+  "functions": [],
+  "generateIndex": true,
+  "generateFormContext": false,
+  "generateEntityTypes": true,
+  "output": {
+    "outputRoot": "./src/app/shared/models/dataverse-gen"
+  }
+}
