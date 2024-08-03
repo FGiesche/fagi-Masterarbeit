@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_fagi_masterarbeit_api_name": {
+            "value": null
+        },
+        "sites_fagi_masterarbeit_wordpress_name": {
+            "value": null
+        },
+        "serverfarms_ASP_fagimasterarbeit_97ce_name": {
+            "value": null
+        },
+        "b2cDirectories_fagimasterarbeitb2c_onmicrosoft_com_name": {
+            "value": null
+        },
+        "flexibleServers_fagimaster_00eb7fd3869950dd882b7ac1_dbserver_name": {
+            "value": null
+        }
+    }
+}
